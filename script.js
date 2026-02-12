@@ -45,34 +45,15 @@ document.querySelectorAll('.service-card, .tour-card, .testimonial-card, .about-
   observer.observe(el);
 });
 
-// SmartRez Booking Modal
-const SMARTREZ_URL = 'https://squamishcanoerental.smartrezbooking.com/widgets/integrated_widget?button_type=primary&button_size=sm&button_text_style=regular&link_to=Categories_view&show_product_detail_page=with_all_details&theme_brand_color=%232F69FE&widgetType=button&mode=sr-popup';
-const bookingModal = document.getElementById('bookingModal');
-const bookingFrame = document.getElementById('bookingFrame');
-const bookingOverlay = document.getElementById('bookingOverlay');
-const bookingClose = document.getElementById('bookingClose');
-
-function openBooking(e) {
-  e.preventDefault();
-  bookingFrame.src = SMARTREZ_URL;
-  bookingModal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeBooking() {
-  bookingModal.classList.remove('active');
-  document.body.style.overflow = '';
-  bookingFrame.src = '';
-}
-
-document.querySelectorAll('[data-book]').forEach(btn => {
-  btn.addEventListener('click', openBooking);
-});
-
-bookingOverlay.addEventListener('click', closeBooking);
-bookingClose.addEventListener('click', closeBooking);
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeBooking();
+// Pulse the SmartRez widget when user clicks a Book Now link
+document.querySelectorAll('a[href="#book"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const embed = document.querySelector('.smartrez-embed');
+    if (embed) {
+      embed.classList.add('pulse');
+      setTimeout(() => embed.classList.remove('pulse'), 1500);
+    }
+  });
 });
 
 // Stagger animation for grid items
