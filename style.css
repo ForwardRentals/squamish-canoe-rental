@@ -12,8 +12,8 @@
   --accent-dark: #a07850;
   --border: #2a2725;
   --border-light: #3a3530;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-display: 'Montserrat', -apple-system, sans-serif;
+  --font-body: 'Barlow', -apple-system, sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --max-width: 1200px;
 }
@@ -83,7 +83,9 @@ a:hover {
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -283,7 +285,9 @@ a:hover {
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
   line-height: 1.05;
   margin-bottom: 24px;
 }
