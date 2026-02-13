@@ -612,19 +612,34 @@ a:hover {
 /* ===== Testimonials ===== */
 .testimonials {
   background: var(--bg-secondary);
+  overflow: hidden;
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 48px;
+.reviews-scroll-wrap {
+  position: relative;
+  padding: 0 24px;
+}
+
+.reviews-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 0 32px;
+  scrollbar-width: none;
+}
+
+.reviews-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonial-card {
+  flex: 0 0 360px;
+  scroll-snap-align: start;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  padding: 40px 32px;
+  padding: 36px 28px;
   transition: all var(--transition);
 }
 
@@ -636,21 +651,61 @@ a:hover {
   color: var(--accent);
   font-size: 1rem;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .testimonial-card blockquote {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.8;
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .testimonial-author strong {
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+}
+
+.review-source {
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.reviews-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.reviews-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ===== Booking ===== */
@@ -909,8 +964,8 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .testimonials-grid {
-    grid-template-columns: 1fr;
+  .testimonial-card {
+    flex: 0 0 300px;
   }
 
   .gallery-grid {

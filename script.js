@@ -46,9 +46,24 @@ document.querySelectorAll('.service-card, .tour-card, .testimonial-card, .about-
 });
 
 // Stagger animation for grid items
-document.querySelectorAll('.services-grid, .tours-grid, .testimonials-grid').forEach(grid => {
+document.querySelectorAll('.services-grid, .tours-grid').forEach(grid => {
   const children = grid.children;
   Array.from(children).forEach((child, i) => {
     child.style.transitionDelay = `${i * 0.1}s`;
   });
 });
+
+// Reviews horizontal scroll
+const reviewsScroll = document.getElementById('reviewsScroll');
+const reviewsPrev = document.getElementById('reviewsPrev');
+const reviewsNext = document.getElementById('reviewsNext');
+
+if (reviewsScroll && reviewsPrev && reviewsNext) {
+  const scrollAmount = 384;
+  reviewsNext.addEventListener('click', () => {
+    reviewsScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+  reviewsPrev.addEventListener('click', () => {
+    reviewsScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+}
