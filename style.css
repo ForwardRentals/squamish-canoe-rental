@@ -179,6 +179,15 @@ a:hover {
   font-weight: 600;
   color: var(--text-primary);
   letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  filter: invert(1);
 }
 
 .nav-logo:hover {
