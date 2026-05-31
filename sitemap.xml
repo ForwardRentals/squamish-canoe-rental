@@ -3,5 +3,41 @@
   <url>
     <loc>https://squamishcanoerental.com/</loc>
     <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/paddleboard-delivery-squamish/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/paddleboard-delivery-whistler/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/canoe-delivery-squamish/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/canoe-delivery-whistler/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/echo-lake-hike-squamish/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/river-of-golden-dreams-whistler/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
   </url>
 </urlset>

@@ -175,24 +175,58 @@ a:hover {
 
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 600;
   color: var(--text-primary);
-  letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  text-decoration: none;
 }
 
+.nav-logo-mark {
+  width: 46px;
+  height: auto;
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.nav-logo-mark path { stroke-width: 3; }
+.nav-logo-mark path.inner { stroke-width: 2.4; }
+.nav-logo-mark line { stroke-width: 2.4; }
+
+.nav-logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-logo-name {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.012em;
+  color: var(--text-primary);
+}
+.nav-logo-tagline {
+  font-weight: 600;
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  opacity: 0.78;
+  margin-top: 5px;
+}
+
+/* Legacy logo image — kept for backward compatibility on any page not yet migrated */
 .nav-logo-img {
   height: 40px;
   width: auto;
   filter: invert(1);
 }
 
-.nav-logo:hover {
-  color: var(--accent);
-}
+.nav-logo:hover { color: var(--accent); }
+.nav-logo:hover .nav-logo-name,
+.nav-logo:hover .nav-logo-tagline { color: var(--accent); }
 
 .nav-links {
   display: flex;
