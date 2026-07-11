@@ -939,6 +939,45 @@ a:hover {
   color: var(--text-primary);
 }
 
+.footer-links--split {
+  display: block;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.footer-links--split a {
+  display: block;
+  margin-bottom: 12px;
+  break-inside: avoid;
+}
+
+.footer-guides {
+  margin-bottom: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-guides .footer-heading {
+  margin-bottom: 20px;
+}
+
+.footer-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px 24px;
+}
+
+.footer-guides-grid a {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer-guides-grid a:hover {
+  color: var(--text-primary);
+}
+
 .footer-social {
   display: flex;
   gap: 16px;
