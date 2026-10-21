@@ -90,4 +90,22 @@
     <changefreq>yearly</changefreq>
     <lastmod>2026-05-31</lastmod>
   </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/how-to-canoe-beginners-guide/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/canoe-vs-paddleboard/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/paddling-with-kids-and-dogs-squamish/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-21</lastmod>
+  </url>
 </urlset>
