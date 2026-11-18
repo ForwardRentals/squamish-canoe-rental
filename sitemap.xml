@@ -108,4 +108,22 @@
     <changefreq>yearly</changefreq>
     <lastmod>2026-10-21</lastmod>
   </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/sunrise-sunset-canoe-squamish-estuary/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/what-to-pack-canoe-day-trip-squamish/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://squamishcanoerental.com/blog/photographing-your-paddle-sea-to-sky/</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2026-11-18</lastmod>
+  </url>
 </urlset>
